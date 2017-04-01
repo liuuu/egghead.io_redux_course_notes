@@ -1,7 +1,9 @@
 # 22. Extracting Container Components (FilterLink)
 [Video Link](https://egghead.io/lessons/javascript-redux-extracting-container-components-filterlink)
 
-In the previous section, we separated presentational components from our main container component. `TodoApp` specifies the behaviors when buttons are clicked, items are added, and filters are applied. The individual presentational components, such as AddTodos, Footer, TodoList, etc don't dispatch actions, but instead call their callback functions in the props. ~Therefore, they are only responsible for the looks, not the behavior~.
+In the previous section, we separated presentational components from our main container component. `TodoApp` specifies the behaviors when buttons are clicked, items are added, and filters are applied. The individual presentational components, such as AddTodos, Footer, TodoList, etc don't dispatch actions, but instead call their callback functions in the props. Therefore, they are only responsible for the looks, not the behavior.
+
+因此他们只负责呈现, 不负责行为.
 
 The downside of this approach is that lots of props must be passed down the tree even when intermediate components don't really use them.
 
